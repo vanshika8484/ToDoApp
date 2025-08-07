@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.Heading {
+  color: brown;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  max-width: 1170px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  min-height: 40px;
+  flex: 1;
+  border-radius: 5px;
+  border: 2px solid cornflowerblue;
+  padding: 0 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form button {
+  min-height: 40px;
+  flex: 0 0 auto;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 2px solid cornflowerblue;
+  cursor: pointer;
+  background-color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+form input:hover,
+form button:hover {
+  border-color: rgb(124, 28, 124);
+}
+
+.outerDiv {
+  width: 90%;
+  max-width: 1170px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.outerDiv ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.outerDiv ul li {
+  background-color: rgb(180, 106, 131);
+  color: white;
+  padding: 10px 50px 10px 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  word-break: break-word;
+}
+
+.outerDiv ul li:hover {
+  border: 2px solid rgb(124, 28, 124);
+}
+
+.completetodo {
+  text-decoration: line-through;
+  background-color: rgb(228, 157, 171) !important;
+}
+
+.outerDiv ul li span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  form input,
+  form button {
+    width: 100%;
+    min-height: 48px;
+    font-size: 1rem;
+  }
+
+  .Heading {
+    font-size: 2rem;
+  }
+
+  .outerDiv ul li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Heading {
+    font-size: 1.8rem;
+  }
+
+  .outerDiv ul li span {
+    top: 8px;
+    right: 8px;
+  }
+}
